@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    position: relative;
+    padding: 0 10px;
+}
+
+.active{
+    @apply md:text-blue-500 md:font-medium underline md:no-underline
+}
+
+.section{
+    @apply md:w-[1100px] mx-auto
+}
+
+.hero{
+    background: url('./assets/images/Blur.png') no-repeat center center;
+    background-size: cover;
+}
+
+
+.swiper-slide-active {
+    background-color: #0067ff; /* Set your desired background color for the active slide */
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0px 20px 70px rgba(0, 103, 255, 0.5);
+    transform: scale(5); /* Adjust the scaling factor as needed */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
